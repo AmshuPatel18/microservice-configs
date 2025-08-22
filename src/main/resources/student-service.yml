@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://ep-damp-sun-adke8ydd-pooler.c-2.us-east-1.aws.neon.tech/studentdb?sslmode=require&channel_binding=require
+    username: neondb_owner
+    password: npg_wJo0ufPNQ4He
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 8081
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
